@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Pendaftaran - SD Muhammadiyah Denpasar</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f0f6ff;
+                color: #1a1a1a;
+            }
+            .navbar {
+                background-color: #1e3a8a;
+            }
+            .navbar .nav-link,
+            .navbar-brand {
+                color: white !important;
+            }
+            .hero {
+                background: url("images/banner1.jpg") center/cover no-repeat;
+                height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                color: white;
+                text-align: center;
+            }
+            .hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+            }
+            .hero h1 {
+                position: relative;
+                z-index: 2;
+                font-size: 3rem;
+            }
+            .section-title {
+                font-weight: bold;
+                color: #1e3a8a;
+                margin-bottom: 30px;
+            }
+            .form-section {
+                background: #ffffff;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            }
+            .btn-primary {
+                background-color: #1e3a8a;
+                border: none;
+            }
+            footer {
+                background: #1e3a8a;
+                color: white;
+                padding: 30px 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#">
+                    <img src="images/logo.png" width="40" class="mr-2" alt="Logo SDM">
+                    SD Muhammadiyah Denpasar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="profilDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#sambutan">Sambutan Kepala Sekolah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#sejarah">Sejarah Sekolah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#fasilitas">Fasilitas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#lokasi">Lokasi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Pendaftaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="materi.html">Materi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-aos="zoom-in">Formulir Pendaftaran</h1>
+            </div>
+        </section>
+
+        <!-- Formulir -->
+        <section class="container py-5" data-aos="fade-up">
+            <div class="form-section">
+                <h2 class="section-title text-center">Isi Data Calon Siswa</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Masukkan nama lengkap siswa"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Tempat, Tanggal Lahir</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Contoh: Yogyakarta, 12 Januari 2017"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Alamat Lengkap</label>
+                        <textarea
+                            class="form-control"
+                            rows="3"
+                            placeholder="Alamat rumah lengkap"
+                            required="required"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Orang Tua / Wali</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nama wali atau orang tua"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Nomor HP Orang Tua</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="08xxxxxxxxxx"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Kelas Tujuan</label>
+                        <select class="form-control">
+                            <option selected="selected" disabled="disabled">Pilih kelas</option>
+                            <option>Kelas 1</option>
+                            <option>Kelas 2</option>
+                            <option>Kelas 3</option>
+                            <option>Kelas 4</option>
+                            <option>Kelas 5</option>
+                            <option>Kelas 6</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-4">Kirim Formulir</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="container">
+                <p class="mb-1">&copy; 2025 SD Muhammadiyah Denpasar. All rights reserved.</p>
+                <small>Data yang dikirim bersifat rahasia dan hanya digunakan untuk keperluan
+                    administrasi sekolah.</small>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,8 @@
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: .125em;
+}

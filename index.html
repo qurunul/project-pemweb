@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SD Muhammadiyah Denpasar</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #e8f1fc;
+                color: #1a1a1a;
+            }
+            nav.navbar {
+                background-color: #1e3a8a !important;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .navbar .nav-link,
+            .navbar-brand {
+                color: white !important;
+            }
+            .hero {
+                background: url("images/banner-web.jpg") center/cover no-repeat;
+                height: 85vh;
+                display: flex;
+                align-items: center;
+                color: white;
+                text-align: center;
+                position: relative;
+            }
+            .hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+            }
+            .hero .container {
+                position: relative;
+                z-index: 2;
+            }
+            .section-title {
+                margin-bottom: 40px;
+                font-weight: bold;
+                font-size: 2.5rem;
+                color: #1e3a8a;
+            }
+            .galeri-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            .galeri-container img {
+                width: 100%;
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .galeri-container img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            }
+            .feature-box {
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 15px 20px;
+                margin-bottom: 15px;
+                box-shadow: 4px 4px 0 #3d78d6;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: #fff;
+            }
+            .feature-icon {
+                color: orange;
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 30px;
+                color: #2d55aa;
+            }
+            .carousel-inner img {
+                border-radius: 10px;
+                max-height: 500px;
+                object-fit: cover;
+            }
+            footer {
+                background: #1e3a8a;
+                color: #fff;
+                padding: 40px 0;
+            }
+            .btn,
+            .form-control {
+                border-radius: 0.375rem;
+            }
+            .btn-primary {
+                background-color: #1e3a8a;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#">
+                    <img src="images/logo.png" width="40" class="mr-2" alt="Logo SDM">
+                    SD Muhammadiyah Denpasar
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="profilDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#sambutan">Sambutan Kepala Sekolah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#sejarah">Sejarah Sekolah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#fasilitas">Fasilitas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="profil.html#lokasi">Lokasi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="daftar.html">Pendaftaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="materi.html">Materi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold" data-aos="fade-down">Selamat Datang di SD Muhammadiyah Denpasar</h1>
+                <p class="lead" data-aos="fade-up">Sekolah Islami Modern – Mencetak Generasi Qurani dan Berprestasi</p>
+            </div>
+        </section>
+
+        <!-- Nilai Inti Sekolah -->
+        <section class="bg-white py-5" data-aos="fade-up">
+            <h2 class="section-title text-center">Nilai-Nilai Kami</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fas fa-praying-hands fa-2x text-primary mb-2"></i>
+                    <p>Religius</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                    <p>Kerjasama</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-lightbulb fa-2x text-primary mb-2"></i>
+                    <p>Inovatif</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-heart fa-2x text-primary mb-2"></i>
+                    <p>Peduli</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guru Profil-->
+        <section id="guru" class="container py-5" style="background-color: #e9f0fb;">
+            <div class="container text-center">
+                <h2 class="mb-5 text-primary fw-bold">Daftar Guru dan Staff</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="images/foto-guru1.jpg" alt="Guru 1" class="img-fluid rounded mb-2">
+                        <h5 class="fw-semibold">Bapak Andi Saputra</h5>
+                        <p class="text-muted">Guru Matematika</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/foto-guru2.jpg" alt="Guru 2" class="img-fluid rounded mb-2">
+                        <h5 class="fw-semibold">Pak Reza Mahendra</h5>
+                        <p class="text-muted">Wali Kelas 5</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/foto-guru3.jpg" alt="Guru 3" class="img-fluid rounded mb-2">
+                        <h5 class="fw-semibold">Bu Siti Nurhaliza</h5>
+                        <p class="text-muted">Guru Bahasa Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi dan Misi Sekolah-->
+        <section class="bg-white py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title text-center">Visi dan Misi</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="text-primary font-weight-bold">Visi:</h5>
+                        <p>Menjadi sekolah dasar Islam unggulan yang membentuk generasi Qurani, cerdas,
+                            dan berakhlak mulia.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-primary font-weight-bold">Misi:</h5>
+                        <ul>
+                            <li>Menerapkan pembelajaran terpadu berbasis nilai-nilai Islam.</li>
+                            <li>Mengembangkan potensi akademik dan non-akademik siswa.</li>
+                            <li>Menanamkan budaya disiplin, tanggung jawab, dan cinta ilmu.</li>
+                            <li>Mengutamakan kerja sama antara sekolah, siswa, dan orang tua.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fitur Unggulan -->
+        <section class="container py-5" data-aos="fade-up">
+            <h2 class="text-center section-title">Kenapa Memilih Kami?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-book-open fa-3x mb-3 text-primary"></i>
+                    <h5>Kurikulum Islami</h5>
+                    <p>Pendidikan yang membentuk karakter dan spiritual anak sejak dini.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-chalkboard-teacher fa-3x mb-3 text-primary"></i>
+                    <h3>Guru Profesional</h3>
+                    <p>Didukung oleh tenaga pengajar yang sabar, kompeten, dan amanah.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-award fa-3x mb-3 text-primary"></i>
+                    <h5>Berprestasi</h5>
+                    <p>Prestasi akademik dan non-akademik tingkat lokal hingga nasional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kegiatan Sekolah -->
+        <section class="bg-white py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center section-title">Program Unggulan Sekolah</h2>
+                <form>
+                    <div class="container mt-5">
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Pelopor Sekolah Penggerak</span>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Program Tahfidz Al-Qur'an</span>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Bilingual (English & Arabic)</span>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Digital School</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Sarana & Prasarana Memadai</span>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Pendidik Profesional</span>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Life Skill & Outdoor Activities</span>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-circle feature-icon"></i>
+                                    <span>Multiple Intelegence</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Kegiatan Sekolahan -->
+        <section class="container py-5" data-aos="fade-up">
+            <h2 class="text-center section-title">Kegiatan & Momen Berkesan</h2>
+            <div id="galeriCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#galeriCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#galeriCarousel" data-slide-to="1"></li>
+                    <li data-target="#galeriCarousel" data-slide-to="2"></li>
+                    <li data-target="#galeriCarousel" data-slide-to="3"></li>
+                    <li data-target="#galeriCarousel" data-slide-to="4"></li>
+                    <li data-target="#galeriCarousel" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/kegiatan1.jpeg" class="d-block w-100" alt="Foto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kegiatan2.jpg" class="d-block w-100" alt="Foto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kegiatan3.jpg" class="d-block w-100" alt="Foto 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kegiatan4.jpeg" class="d-block w-100" alt="Foto 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kegiatan5.jpg" class="d-block w-100" alt="Foto 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/kegiatan6.jpg" class="d-block w-100" alt="Foto 6">
+                    </div>
+                </div>
+                <a
+                    class="carousel-control-prev"
+                    href="#galeriCarousel"
+                    role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Sebelumnya</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#galeriCarousel"
+                    role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Selanjutnya</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="container">
+                <p class="mb-1">&copy; 2025 SD Muhammadiyah Denpasar. All rights reserved.</p>
+                <small>Dibangun dengan semangat dakwah dan pendidikan terbaik untuk generasi bangsa.</small>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Profil Sekolah - SD Muhammadiyah Denpasar</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f0f6ff;
+                color: #1a1a1a;
+            }
+            .navbar {
+                background-color: #1e3a8a;
+            }
+            .navbar .nav-link,
+            .navbar-brand {
+                color: white !important;
+            }
+            .hero {
+                background: url("images/banner2.jpg") center/cover no-repeat;
+                height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                color: white;
+                text-align: center;
+            }
+            .hero::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+            }
+            .hero h1 {
+                position: relative;
+                z-index: 2;
+                font-size: 3rem;
+            }
+            section {
+                scroll-margin-top: 70px;
+            }
+            .section-title {
+                font-weight: bold;
+                color: #1e3a8a;
+                margin-bottom: 30px;
+            }
+            .kepsek img {
+                border-radius: 8px;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: 250px;
+            }
+            iframe {
+                width: 100%;
+                height: 300px;
+                border: none;
+                border-radius: 8px;
+            }
+            footer {
+                background: #1e3a8a;
+                color: white;
+                padding: 30px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#">
+                    <img src="images/logo.png" width="40" class="mr-2" alt="Logo SDM">
+                    SD Muhammadiyah Denpasar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="profilDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Profil</a>
+                            <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#sambutan">Sambutan Kepala Sekolah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#sejarah">Sejarah Sekolah</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#fasilitas">Fasilitas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#lokasi">Lokasi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="daftar.html">Pendaftaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="materi.html">Materi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-aos="zoom-in">Profil SD Muhammadiyah Denpasar</h1>
+            </div>
+        </section>
+
+        <!-- Sambutan Kepala Sekolah -->
+        <section id="sambutan" class="container py-5" data-aos="fade-up">
+            <h2 class="section-title text-center">Sambutan Kepala Sekolah</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img
+                        src="images/kepsek.png"
+                        alt="Kepala Sekolah"
+                        class="img-fluid"
+                        width="250px">
+                </div>
+                <div class="col-md-8">
+                    <p style="text-align: justify;">Assalamu’alaikum warahmatullahi wabarakatuh.
+                        Selamat datang di website resmi SD Muhammadiyah. Kami berkomitmen menyelenggarakan pendidikan yang berkualitas
+                        tinggi dan berlandaskan nilai-nilai Islam. Semoga melalui media ini, kita dapat
+                        berbagi informasi dan inspirasi untuk pendidikan yang lebih baik.</p>
+                    <p style="text-align: justify;">Yang tidak kalah penting, dalam berbagai program unggulan ini ada
+                        muatan-muatan karakter yang akan membentuk anak menjadi pribadi yang lebih baik.
+                        Selain berkarakter Islami, tentu saja anak akan lebih siap dengan kemajuan
+                        teknologi informasi. Karakter seperti ini yang akan membentengi siswa dari sifat
+                        egois, tapi justru siswa akan lebih mampu menurunkan egonya sendiri. Hasilnya,
+                        tentu justru lebih ke nilai kepemimpinan, enterpreunership, dan berbagai
+                        prestasi membanggakan yang diraih, baik akademik maupun non akademik.
+                        Wassalamu’alaikum wr wb.</p>
+                    <p class="font-weight-bold mt-3">Hormat Kami,
+                        <br>
+                        Bapak Rifqi Maulana, S.Pd., Gr., M.Pd.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sejarah Sekolah-->
+        <section id="sejarah" class="bg-white py-5" data-aos="fade-up">
+            <h2 class="text-center section-title">Sejarah Sekolah</h2>
+            <div class="container">
+            <img src="images/foto-sklh.png" alt="Foto Render Sekolah" class="mx-auto d-block mb-4" width="600" height="450" style="border: 0;">
+            <p style="text-align: justify;">SD Muhammadiyah 1 Denpasar didirikan pada tanggal 1 Agustus 1960 dengan Akta pendirian Beslit dari PP Muhammadiyah tanggal 22 Agustus 1977 No. 407/1.001/131-60/1977 dan Surat Keputusan Kepala Kantor Wilayah Departemen Pendidikan dan Kebudayaan Propinsi Bali No. 30/119/Kep/I.87 tanggal 11 Maret 1987 dengan Nomor Data Sekolah : V.050.810.18 dan Nomor Statistik Sekolah : 104.220.402.049 beralamatkan di Jl. Imam Bonjol 45 yang sekarang menjadi Jl. Imam Bonjol 51 Denpasar Satu komplek dengan TK Aisyiyah 1 Denpasar.</p>
+            </div>
+        </section>
+
+        <!-- Fasilitas Sekolah -->
+        <section id="fasilitas" class="container py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center section-title">Fasilitas Sekolah</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="images/ruang-kls.jpg" alt="Ruang kelas" class="img-fluid rounded mb-2" style="height: 200px; object-fit: cover;">
+                        <h5>Ruang Kelas Nyaman</h5>
+                        <p>Kelas yang bersih, rapi, dan dilengkapi dengan fasilitas belajar modern untuk kenyamanan siswa.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="images/ruang-prps.jpg" alt="Perpustakaan Lengkap" class="img-fluid rounded mb-2" style="height: 200px; object-fit: cover;">
+                        <h5>Perpustakaan Lengkap</h5>
+                        <p>Perpustakaan dengan koleksi buku yang beragam untuk mendukung budaya literasi siswa.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="images/ruang-lab.jpg" alt="Laboratorium Sains" class="img-fluid rounded mb-2" style="height: 200px; object-fit: cover;">
+                        <h5>Laboratorium Sains</h5>
+                        <p>Lab sains yang memadai untuk praktik dan eksperimen siswa dalam pelajaran IPA.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="images/ruang-ktn.jpg" alt="Kantin Sekolah" class="img-fluid rounded mb-2" style="height: 200px; object-fit: cover;">
+                        <h5>Kantin Sekolah</h5>
+                        <p>Kantin yang bersih dan sehat menyediakan makanan bergizi untuk para siswa.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="images/lap-org.jpg" alt="Lapangan Olahraga" class="img-fluid rounded mb-2" style="height: 200px; object-fit: cover;">
+                        <h5>Lapangan Olahraga</h5>
+                        <p>Lapangan luas untuk kegiatan olahraga seperti sepak bola, basket, dan senam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps -->
+        <section id="lokasi" class="bg-white py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center section-title">Lokasi Sekolah</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.317528885454!2d115.20644207458285!3d-8.661321191386072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240bcdac3c257%3A0xc520f3109f4774ca!2sSekolah%20Dasar%20Muhammadiyah%201%20Denpasar!5e0!3m2!1sid!2sid!4v1746365194829!5m2!1sid!2sid"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="text-center mt-3">Jl. Imam Bonjol No.51, Pemecutan, Kec. Denpasar Bar., Kota Denpasar, Bali 80119</p>
+            </div>
+        </section>
+
+        <!-- Form Kontak -->
+        <section class="bg-white py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center section-title">Hubungi Kami</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Nama Lengkap"
+                                required="required">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Email"
+                                required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            class="form-control"
+                            rows="4"
+                            placeholder="Pesan Anda"
+                            required="required"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="container">
+                <p class="mb-1">&copy; 2025 SD Muhammadiyah Denpasar. All rights reserved.</p>
+                <small>Website ini sebagai bentuk transparansi dan komunikasi aktif dengan masyarakat.</small>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+</html>
