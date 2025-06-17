@@ -54,6 +54,34 @@
                 color: #1e3a8a;
                 margin-bottom: 30px;
             }
+            .login-prompt {
+                background: white;
+                padding: 40px;
+                border-radius: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                text-align: center;
+            }
+            .btn-login {
+                background: #1e3a8a;
+                border: none;
+                border-radius: 10px;
+                padding: 12px 30px;
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+            .btn-login:hover {
+                background: #1e40af;
+                color: white;
+                text-decoration: none;
+                transform: translateY(-2px);
+            }
+            footer {
+                background: #1e3a8a;
+                color: white;
+                padding: 30px 0;
+            }
         </style>
     </head>
     <body>
@@ -117,30 +145,62 @@
                 <p class="lead" data-aos="fade-up">Ayo belajar bersama melalui video, kuis, dan materi menarik! Website e-learning ini dibuat khusus untuk siswa SD agar bisa belajar kapan saja dan di mana saja dengan cara yang seru dan mudah dipahami.</p>
             </div>
         </section>
+        
         <section class="container py-5" data-aos="fade-up">
-            <h2 class="section-title text-center">Materi E-Learning</h2>
-            <div id="materiContent">
-                <p>Silakan login untuk mengakses materi.</p>
+            <h2 class="section-title text-center">Akses Materi E-Learning</h2>
+            <div class="login-prompt">
+                <i class="fas fa-lock fa-4x text-primary mb-4"></i>
+                <h4>Login Diperlukan</h4>
+                <p class="mb-4">Untuk mengakses materi pembelajaran dan fitur presensi, silakan login terlebih dahulu menggunakan akun siswa atau guru Anda.</p>
+                
+                <a href="login.html" class="btn-login">
+                    <i class="fas fa-sign-in-alt mr-2"></i>Login Sekarang
+                </a>
+                
+                <div class="mt-4">
+                    <h6>Fitur yang Tersedia:</h6>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="text-left">
+                                <h6 class="text-primary"><i class="fas fa-user-graduate mr-2"></i>Untuk Siswa:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success mr-2"></i>Presensi harian</li>
+                                    <li><i class="fas fa-check text-success mr-2"></i>Akses materi pembelajaran</li>
+                                    <li><i class="fas fa-check text-success mr-2"></i>Riwayat presensi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-left">
+                                <h6 class="text-primary"><i class="fas fa-chalkboard-teacher mr-2"></i>Untuk Guru:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success mr-2"></i>Upload materi</li>
+                                    <li><i class="fas fa-check text-success mr-2"></i>Laporan presensi siswa</li>
+                                    <li><i class="fas fa-check text-success mr-2"></i>Manajemen data siswa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container">
-            <p class="mb-1">&copy; 2025 SD Muhammadiyah Denpasar. All rights reserved.</p>
-            <small>Website ini sebagai bentuk transparansi dan komunikasi aktif dengan masyarakat.</small>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="container">
+                <p class="mb-1">&copy; 2025 SD Muhammadiyah Denpasar. All rights reserved.</p>
+                <small>Website ini sebagai bentuk transparansi dan komunikasi aktif dengan masyarakat.</small>
+            </div>
+        </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
-</body>
+    </body>
 </html>
